@@ -32,6 +32,8 @@ html, body {
 .content {
     height: 100vh;
     display: flex;
+    position: relative;
+    z-index: 1;
 }
 
 .container {
