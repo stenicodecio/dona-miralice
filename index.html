@@ -150,6 +150,7 @@
     <script>
         $(document).ready(function() {
             $('.game-over .button__primary').on('click', function() {
+                $('body').css('overflow', 'auto');
                 $('.game-over').height(0);
             });
 
