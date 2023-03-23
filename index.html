@@ -149,8 +149,10 @@
     </div>
     <script>
         $(document).ready(function() {
+            
+
             $('.game-over .button__primary').on('click', function() {
-                $('body').css('overflow', 'auto');
+                $('html, body').css('overflow', 'auto');
                 $('.game-over').height(0);
             });
 
@@ -163,6 +165,7 @@
 
             makeItRain();
             setTimeout(() => {
+                window.scrollTo(0, 0);
                 $('.rain').css('opacity', 1);
             }, 100)
         });
